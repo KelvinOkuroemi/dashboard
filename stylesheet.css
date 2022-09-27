@@ -1,0 +1,238 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-width: 100%;
+  text-align: center;
+  height: 100%;
+  /* padding: 16px; */
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 7fr 1fr;
+}
+.container div {
+  padding: 15px;
+  /* font-size: 32px; */
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  /* border-radius: 15px; */
+}
+
+.header {
+  grid-column: 2 / 3;
+  color: red;
+  background-color: white;
+}
+
+.sidebar {
+  background-color: #ff7755;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.article {
+  background-color: #bccbde;
+  grid-row: 2/-1;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+/* Header Design */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: -30px;
+  margin-top: -35px;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 25px 8fr 25px 1fr;
+  justify-items: start;
+  gap: 5px;
+}
+
+input.bar-bar {
+  width: 250%;
+  border-radius: 90px;
+  background-color: #ebe4e4;
+}
+
+.search-bar .logo {
+  justify-self: end;
+}
+
+.btn-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  justify-items: start;
+  gap: 5px;
+}
+
+.btn-bar button {
+  min-width: 200px;
+}
+
+.header-logo {
+  color: gray;
+}
+
+/* Sidebar Design*/
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 350px;
+  background-color: rgb(59 130 246);
+}
+
+.side-grid {
+  display: grid;
+  grid-template-columns: 70px 100px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  justify-items: start;
+}
+
+.side-grid div {
+  font-size: 1.2rem;
+  /* margin: -25px; */
+}
+
+.dash {
+  font-size: 45px;
+}
+
+.dash-text {
+  font-size: 32px;
+  margin-top: 15px;
+}
+
+/* Article */
+.article {
+  position: relative;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 400px;
+  min-height: 105vh;
+}
+
+/* Card */
+.card-layout {
+  display: grid;
+  margin-top: 50px;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+}
+
+.card {
+  height: 250px;
+  border-radius: 10px;
+  display: grid;
+  grid-column: 1fr;
+  justify-items: start;
+  gap: 5px;
+}
+.card p{
+  font-size: 1.2rem;
+}
+.card .title{
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.article {
+  background-color: #bccbde;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.article-title {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  font-size: 24px;
+}
+
+/* Information */
+.info-layout {
+  margin-top: 50px;
+  margin-left: -220px;
+  margin-right: 150px;
+}
+
+.info-title {
+  position: absolute;
+  font-size: 24px;
+  top: 15px;
+  right: 370px;
+}
+
+.update-layout {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  border-radius: 20px;
+}
+.update-layout h6 {
+  color: black;
+}
+
+.update-layout p {
+  color: gray;
+}
+
+.Announcement {
+  display: grid;
+  justify-items: start;
+}
+
+.user-layout {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+}
+
+.info-layout .update-layout .Announcement-border {
+  width: 100%;
+  height: 2px;
+}
+
+.logo-big{
+  font-size: 2rem;
+}
